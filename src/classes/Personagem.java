@@ -37,11 +37,13 @@ public class Personagem {
         switch (esc) {
             case 1:
                 System.out.println("Foi pra frente");
-
+                break;
             case 2:
                 System.out.println("Foi pra esquerda");
+                break;
             case 3:
                 System.out.println("Foi pra direita");
+                break;
         }
     }
 }

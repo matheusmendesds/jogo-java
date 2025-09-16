@@ -9,9 +9,11 @@ public class jogoTest01 {
         Mago mago1 = new Mago("Walter",100,65,92,"Mago");
         Lutador lut1 = new Lutador("Kevin",100,80,95);
 
-        lut1.mostrarPersonagens();
-        mago1.mostrarPersonagens();
+        //lut1.mostrarPersonagens();
+        //mago1.mostrarPersonagens();
 
-        Personagem.lutar(lut1,mago1);
+        //Personagem.lutar(lut1,mago1);
+        Personagem.start(lut1);
+
     }
 }
