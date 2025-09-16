@@ -1,5 +1,7 @@
 package classes;
 
+import java.util.Scanner;
+
 public class Personagem {
     protected String nome;
     protected int vida;
@@ -23,6 +25,23 @@ public class Personagem {
         } else {
             System.out.println(pers2.nome + " Ganhou a luta");
 
+        }
+    }
+
+    public static void start(Personagem pers1){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println(pers1.nome + " , escolha o que fazer:");
+
+        System.out.println("1-Andar para frente 2-Ir à esquerda 3-Ir à direito");
+        int esc = scanner.nextInt();
+        switch (esc) {
+            case 1:
+                System.out.println("Foi pra frente");
+
+            case 2:
+                System.out.println("Foi pra esquerda");
+            case 3:
+                System.out.println("Foi pra direita");
         }
     }
 }
